@@ -1,0 +1,3 @@
+setImmediate is a function designed to execute script once the current poll phase /queue completes and setTimeout is a function that schedules a script to be run after certain time, so using setImmediate, it may run script before or after setTimeout (depending on the time given)
+process.nextTick is not part of the eventloop, nextTickQueue will be processed after the current operation  is complete regardless of the current phase of the eventloop 
+fs,http,REPL,Events,Errors,Modules: CommonJS modules,Query strings,V8,Process, OS,Globals,Buffer
