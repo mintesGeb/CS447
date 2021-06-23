@@ -1,0 +1,19 @@
+{
+  "name": "cs447",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mintesGeb/CS447.git"
+  },
+  "author": "mintes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mintesGeb/CS447/issues"
+  },
+  "homepage": "https://github.com/mintesGeb/CS447#readme"
+}
