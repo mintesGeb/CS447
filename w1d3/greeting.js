@@ -1,10 +1,13 @@
-function sayHi() {
-  console.log(__dirname);
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  getName() {
+    console.log(this.name);
+  }
+  sayHello() {
+    console.log("hello, " + this.name);
+  }
 }
-function sayHello() {
-  console.log("hello");
-}
-module.exports = {
-  sayHi: sayHi,
-  f: sayHello,
-};
+
+module.exports = Person;
