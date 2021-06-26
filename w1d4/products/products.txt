@@ -1,0 +1,1 @@
+{"id":2,"price":344,"name":"shaver"},{"id":1,"price":500,"name":"Keyboard"},{"id":3,"price":600,"name":"guitar"}
