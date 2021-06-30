@@ -1,0 +1,16 @@
+POST-/courses
+GET-/courses
+GET-/students
+POST-/students
+POST-/students
+GET-/students/msd?type=online
+GET-/students
+POST-/users
+GET-/users
+GET-/users
+POST-/users
+POST-/users
+POST-/users
+GET-/users
+GET-/users
+GET-/users

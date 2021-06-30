@@ -1,0 +1,2 @@
+Practicing fs with writeSyncMy Text 
+Practicing with fs write stream 
