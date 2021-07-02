@@ -24,25 +24,26 @@ router.get("/:id", function (req, res, next) {
 router.post("/", function (req, res, next) {
   const writeUser = fs.createWriteStream("./user.txt", { flags: "a" });
   writeUser.write(JSON.stringify(req.body) + "\n");
-  res.json("Done");
+  res.json({ stats: "success" });
 });
 
 router.put("/:id", function (req, res, next) {
   const readUser = fs.readFileSync("./user.txt", "utf-8");
   const writeUser = fs.createWriteStream("./user.txt");
-  let usersList = [];
+
+  let updated;
 
   readUser.split("\n").forEach((user) => {
     let userObj = JSON.parse(user);
 
     if (userObj.id === req.params.id) {
       userObj = req.body;
+      updated = userObj;
     }
 
     writeUser.write(JSON.stringify(userObj) + "\n");
-    usersList.push(userObj);
   });
-  res.end("updated");
+  res.json({ status: "success" });
 });
 
 router.delete("/:id", function (req, res, next) {
@@ -56,7 +57,7 @@ router.delete("/:id", function (req, res, next) {
       writeUsers.write(JSON.stringify(userObj) + "\n");
     }
   });
-  res.end("deleted");
+  res.json({ status: "success" });
 });
 
 module.exports = router;
