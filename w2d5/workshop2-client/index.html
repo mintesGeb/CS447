@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Workshop</title>
+    <style>
+      .hidden {
+        visibility: hidden;
+      }
+      body {
+        margin: 50px;
+      }
+      hr {
+        width: 50%;
+        text-align: left;
+        margin-left: 0;
+      }
+      .margin-me-div {
+        margin: 20px;
+      }
+      .left-align {
+        position: absolute;
+        left: 200px;
+      }
+      .result {
+        border: 1px solid black;
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        left: 50%;
+        top: 100px;
+      }
+    </style>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>Min Library</h1>
+
+    <div>
+      <button id="get-all-books" class="">Get All books</button>
+    </div>
+    <hr class="" />
+    <div class="">
+      <button id="get-book-by-id" class="">Get Book by ID</button>
+      <input type="text" placeholder="Enter book ID" class="left-align" />
+    </div>
+    <hr class="" />
+    <div class="">
+      <button id="submit-book" class="">Submit Book</button>
+      <div class="margin-me-div">
+        <label for="id">ID</label>
+        <input id="id" type="text" class="left-align" /><br />
+        <label for="title">Title</label>
+        <input id="title" type="text" class="left-align" /><br />
+        <label for="isbn">ISBN</label>
+        <input id="ISBN" type="text" class="left-align" /><br />
+        <label for="pub-date">Published Date</label>
+        <input id="pub-date" type="text" class="left-align" /><br />
+        <label for="author">Author</label>
+        <input id="author" type="text" class="left-align" />
+      </div>
+    </div>
+    <hr class="" />
+    <div class="">
+      <button id="delete-book" class="">Delete Book</button>
+      <input type="text" placeholder="Enter book ID" class="left-align" />
+    </div>
+    <hr class="" />
+    <div class="">
+      <button id="edit-book" class="">Edit Book info</button>
+      <input type="text" placeholder="Enter book ID" class="left-align" />
+    </div>
+
+    <div class="result"></div>
+  </body>
+</html>
