@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>Client-side</h1>
+    <hr />
+    <div id="log-in-page">
+      <form action="">
+        <label for="username">Username</label>
+        <input id="username" type="text" value="mintes" />
+        <label for="password">Password</label>
+        <input id="password" type="password" value="123456" />
+        <button type="button" id="login-btn">Login</button>
+      </form>
+    </div>
+    <button id="to-courses-page">Courses</button>
+    <button id="to-products-page">Products</button>
+    <div id="products-page">
+      <h1>Products</h1>
+      <div id="listOfProducts"></div>
+      <div>
+        <form action="">
+          <label for="prod-id">ID</label>
+          <input id="prod-id" type="text" value="1" />
+          <label for="prod-name">Name</label>
+          <input id="prod-name" type="text" value="asdf" />
+          <label for="prod-price">Price</label>
+          <input id="prod-price" type="text" value="fdsa" />
+          <button type="button" id="add-prod">Add Product</button>
+          <div>
+            <button type="button" id="get-data-btn">get data</button>
+            <div id="get-div"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="courses-page">
+      <h1>Courses</h1>
+    </div>
+  </body>
+</html>
