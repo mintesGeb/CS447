@@ -29,8 +29,6 @@ app.use("/", (req, res, next) => {
     return;
   }
   const header = req.headers.authorization;
-  console.log(header);
-  // console.log(req.header);
 
   if (!header) {
     return res.json({ status: "auth_error", msg: "check header1" });
