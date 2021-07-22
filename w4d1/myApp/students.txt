@@ -1,0 +1,8 @@
+{"firstname":"john","lastname":"doe","email":"john@doe.com","gpa":"3.5","major":"MSD","courses":[{"code":"477","name":"SSP"}]}
+{"firstname":"john","lastname":"doe","email":"john1@doe.com","gpa":"3.5","major":"MSD","courses":[{"code":"477","name":"SSP"}]}
+{"firstname":"john","lastname":"doe","email":"john1@doe.com","gpa":"3.5","major":"MSD","courses":[{"code":"477","name":"SSP"}]}
+{"firstname":"john","lastname":"doe","email":"john1@doe.com","gpa":"3.5","major":"MSD","courses":[{"code":"477","name":"SSP"}]}
+{"firstname":"john","lastname":"doe","email":"john1@doe.com","gpa":"3.5","major":"MSD","courses":[{"code":"477","name":"SSP"}]}
+{"firstname":"john","lastname":"doe","email":"john1@doe.com","gpa":"3.5","major":"MSD","courses":[{"code":"477","name":"SSP"}]}
+{"firstname":"john","lastname":"doe","email":"john1@doe.com","gpa":"3.5","major":"MSD","courses":[{"code":"477","name":"SSP"}]}
+{"firstname":"john","lastname":"doe","email":"john1@doe.com","gpa":"3.5","major":"MSD","courses":[{"code":"477","name":"SSP"}]}

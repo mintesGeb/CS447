@@ -7,7 +7,7 @@ const mongoConnect = (callback) => {
   })
     .then((client) => {
       console.log("Connected");
-      _db = client.db("testDB2");
+      _db = client.db("OnlineShopping");
       callback();
     })
     .catch((err) => {

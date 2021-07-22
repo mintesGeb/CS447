@@ -1,4 +1,5 @@
 const getDB = require("../utils/database").getDB;
+const { ObjectId } = require("mongodb");
 let products = [];
 
 class Product {
@@ -10,16 +11,38 @@ class Product {
   }
 
   static getAll() {
-    return products;
+    return getDB().collection("products").find().toArray();
   }
   save() {
-    return getDB().collection("teachers").insertOne(this);
+    return getDB().collection("products").insertOne(this);
     // this.id = Math.random();
     // products.push(this);
     // return this;
   }
   static getProductById(productID) {
-    return products.find((prod) => prod.id == productID);
+    return getDB()
+      .collection("products")
+      .findOne({ _id: ObjectId(productID) });
+    // return products.find((prod) => prod.id == productID);
+  }
+  static deleteById(productID) {
+    return getDB()
+      .collection("products")
+      .deleteOne({ _id: ObjectId(productID) });
+  }
+  update() {
+    return getDB()
+      .collection("products")
+      .updateOne(
+        { _id: new ObjectId(this._id) },
+        {
+          $set: {
+            title: this.title,
+            price: this.price,
+            description: this.description,
+          },
+        }
+      );
   }
 }
 module.exports = Product;
